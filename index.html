@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="FlipClock-master/compiled/flipclock.css">
+
   <script src="https://kit.fontawesome.com/87402575ba.js"></script>
 
   <!-- =======================================================
@@ -35,15 +37,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">Lua</a>
+              <a class="navbar-brand" href="#">Lúa</a>
             </div>
             <div class="collapse navbar-collapse" id="lauraMenu">
               <ul class="nav navbar-nav navbar-right navbar-border">
-                <li class="active"><a href="#main-header">Home</a></li>
-                <li><a href="#about">Como Llegar</a></li>
-                <li><a href="#portfolio">Mesa de Regalos</a></li>
-                <li><a href="#testimonial">Testimonial</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li class="active"><a href="#main-header"><i class="fas fa-heart"></i></a></li>
+                <li><a href="#about">Invitacion</a></li>
+                <li><a href="#testimonial">Como Llegar</a></li>
               </ul>
             </div>
           </div>
@@ -54,9 +54,12 @@
           <div class="row">
             <div class="col-md-12 wow fadeIn delay-05s">
               <div class="banner-text">
-                <h2>Bienvenida <span>Lua</span> Isabella,</h2>
-                <p>Baby Shower <br>& Ceremonia</p>
+                <h2>Bienvenida <span>Lúa</span> Isabella,</h2>
+                <p>Baby Shower <br></p>
               </div>
+              
+                  <div style="" class="your-clock text"></div>
+
               <div class="overlay-detail text-center">
                 <a href="#about"><i class="fa fa-angle-down"></i></a>
               </div>
@@ -76,15 +79,27 @@
         </div>
         <div class="col-md-6 text-left">
           <div class="about-text">
+              <p>&nbsp;</p>
+
             <p>!Un montón de alegría está por llegar, por favor ayúdanos a prepararnos para ese día tan especial!
-              Te esperamos para celebrar a Lua con un Baby Shower, el sábado  de octubre de 12:30 a 16:00 en la terraza .
-              Será una tarde de comida con refrigerios y mucha diversión. Agradecemos confirmar tu participación haciendo clik en el siguiente boton.</p>
-              <a href="https://wa.me/523316918519?text=Confirmo%20mi%20asistencia"  target="_blank"><div class="text-center"><button type="submit" class="btn btn-success btn-lg"><i class="fab fa-whatsapp"></i></button></div></a>
-            <p>&nbsp;</p>
-            <p>Te adjuntamos el link de google maps para que puedas acceder a la ruta desde tu ubicacion actual.
+              Te esperamos para celebrar a Lua con un Baby Shower, el sábado 12 de octubre de 15:30 a 21:00.
+              Será una tarde de comida con refrigerios y mucha diversión.</p>
+              <p>Agradecemos confirmar tu participación escribiendo tu nombre en el siguiente campo y haciendo clik en el siguiente boton.</p>
+              <div class="text-center">
+                  <form>
+                      <div class="form-group">
+                        <label id="labelInput" for="exampleInputEmail1">Invitado:</label>
+                        <input type="name" class="form-control" id="name"  placeholder="Escribe tu nombre">
+                      </div>
+                      <button class="btn btn-lg btn-success" id="link" type="button" onclick="getName()"><i class="fab fa-whatsapp"></i></button>
+                    </form>
+                  
+             
+              </div>            
+                <p>&nbsp;</p>
+            <p>
               Te recomendamos: 
             </p>
-            <div class="text-center"><button class="btn btn-primary btn-lg"><i class="fas fa-map-marked-alt"></i></button></div>
             <p>&nbsp;</p>
             <ul class="abt-list">
               <li>- Llevar regalo.</li>
@@ -96,150 +111,21 @@
       </div>
     </div>
   </section>
-  <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h2 class="title text-center">Mesa de <span class="deco">Regalos</span></h2>
-        </div>
-        <div class="col-md-12">
-          <div id="myGrid" class="grid-padding">
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <a href="https://mamalov.com.mx/producto/panalera-back-pack-azul-negro/" target="_blank"><img src="https://mamalov.com.mx/wp-content/uploads/2019/04/19011-1.jpg" target="blank" class="img-responsive"></a>
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-            </div>
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/port03.jpg" class="img-responsive">
-            </div>
-            <div class="col-md-4 col-sm-4 padding-right-zero">
-              <img src="img/port01.jpg" class="img-responsive">
-              <img src="img/portfolio01.jpg" class="img-responsive">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port03.jpg" class="img-responsive">
-              <img src="img/portfolio02.jpg" class="img-responsive">
-              <img src="img/port02.jpg" class="img-responsive">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
   <section id="testimonial" class="section-padding wow fadeInUp">
     <div class="container">
       <div class="row">
-        <h2 class="title text-center">See What Our <span class="deco">Client</span> Are Saying ?</h2>
-        <div class="test-sec">
-          <div class="col-sm-4">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at. </p>
-            </blockquote>
-            <div class="carousel-info">
-              <div class="pull-left"> <span class="testimonials-name">John Doe</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
-            </div>
+          <h2 class="title text-center">Como <span class="deco">llegar</span></h2>
+          <div class="text-center">
+              <div class="embed-responsive embed-responsive-16by9">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3731.837259353987!2d-103.32592858488695!3d20.716832086168164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b05283fc27e3%3A0x7d5a4746b640fec0!2sRinconada%20del%20Cipr%C3%A9s%20621_8%2C%20Lomas%20de%20Independencia%2C%2044240%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1569346172707!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              </div>
           </div>
-          <div class="col-sm-4">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at. </p>
-            </blockquote>
-            <div class="carousel-info">
-              <div class="pull-left"> <span class="testimonials-name">John Doe</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diamsed commodo nibh ante facilisis bibendum dolor feugiat at. </p>
-            </blockquote>
-            <div class="carousel-info">
-              <div class="pull-left"> <span class="testimonials-name">John Doe</span> <span class="testimonials-post">CEO,  Company Inc.</span> </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
-  <section id="contact" class="section-padding wow fadeIn delay-05s">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="contact-sec text-center">
-            <h2>Want To <span class="deco">Hire</span> Me?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
-          </div>
-        </div>
-
-        <div class="col-md-8 col-md-push-2">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-
-            <div class="text-center"><button type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
-          </form>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <footer class="footer-2 text-center-xs bg--white">
-    <div class="container">
-      <!--end row-->
-      <div class="row">
-        <div class="col-md-6">
-          <div class="footer">
-            © Copyright Laura Theme. All Rights Reserved
-            <div class="credits">
-              <!--
-                All the links in the footer should remain intact. 
-                You can delete the links only if you purchased the pro version.
-                Licensing information: https://bootstrapmade.com/license/
-                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Laura
-              -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 text-right">
-          <ul class="social-list">
-            <li>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-dribbble"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-vimeo"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-      <!--end row-->
-    </div>
-  </footer>
+  
+  
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.easing.min.js"></script>
@@ -248,6 +134,50 @@
   <script src="js/wow.js"></script>
   <script src="js/custom.js"></script>
   <script src="contactform/contactform.js"></script>
+  <script src="FlipClock-master/compiled/flipclock.min.js"></script>
+  <script>
+    function getName () {
+      var link = document.getElementById('link')
+      var name = document.getElementById('name').value
+      setTimeout(()=> {
+        window.open(`https://wa.me/523316918519?text=Confirmo%20mi%20asistencia:%20${name}`)
+      },500)
+    }
+
+    var today   = new Date();
+    today   = today.getTime()/1000;
+
+    // Final date object.
+    var finalDate = new Date();
+
+    // Setting year for final date.
+    finalDate.setFullYear(2019);
+
+    // Setting month for final date.
+    // Month counting starts from 0 i.e. Jan = 0, therefore March = 2.
+    finalDate.setMonth(9);
+
+    // Setting Day for final date.
+    finalDate.setDate(12);
+
+    // Setting Hours for final date.
+    finalDate.setHours(16);
+
+    // Setting Minutes for final date.
+    finalDate.setMinutes(00);
+
+    // Setting Seconds for final date.
+    finalDate.setSeconds(00);
+
+    var finalDate  = finalDate.getTime()/1000;
+    var diff  = finalDate - today;
+
+    var clock = $('.your-clock').FlipClock(diff,{
+      clockFace: "DailyCounter",
+      countdown: true,
+      language: "spanish"
+});
+  </script>
 
 </body>
 

@@ -48,7 +48,7 @@ Responsive media queries
 ***********************************/
 
 .header {
-  background: url('../img/baby.jpg') no-repeat fixed;
+  background: url('../img/babyshow.jpeg') no-repeat fixed;
   background-size: cover;
   min-height: 630px;
   position: relative;
@@ -90,13 +90,13 @@ Responsive media queries
 
 @media (max-width: 768px) {
 	.navbar-collapse {
-		background: rgba(50, 60, 70, 0.9);
+    background: rgba(255, 136, 155, 0.6);
 	}
 }
 
 .top-nav-collapse {
   padding: 0;
-  background: rgba(50, 60, 70, 0.9);
+  background: rgba(255, 136, 155, 0.6);
 }
 
 .bg-color {
@@ -107,7 +107,7 @@ Responsive media queries
 .navbar-border {}
 
 .banner-text {
-  border-left: 5px solid #BE2525;
+  border-left: 5px solid rgb(225, 136, 155);
   padding: 15px 40px;
   color: #fff;
   margin-top: 170px;
@@ -145,7 +145,7 @@ Responsive media queries
 }
 
 #about {
-  background: url('../img/baby2.jpg') no-repeat;
+  background: url('../img/baby4.jpeg') no-repeat;
   background-size: cover;
   margin-bottom: -3px;
 }
@@ -161,18 +161,24 @@ Responsive media queries
 
 .title-text {
   padding: 0px 25px 0px 0px;
-  border-right: 5px solid #BE2525;
+  border-right: 5px solid rgb(225, 136, 155);
   font-size: 24px;
+  color: white;
 }
 
 .about-text p {
-  color: #444;
+  color: white;
+}
+
+#labelInput {
+  color: white;
 }
 
 .abt-list li {
   padding: 5px 0px;
   font-size: 18px;
   font-weight: 400;
+  color: white;
 }
 
 #portfolio {
@@ -418,3 +424,4 @@ Responsive media queries
     margin-bottom: 15px;
   }
 }
+
